@@ -216,7 +216,7 @@ DealShift StackForge offers a seamless, intuitive interface that makes every gam
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-ZH-Nnr">
-                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <rect key="frame" x="657" y="16" width="120" height="40"/>
                                 <color key="backgroundColor" name="appColor_white"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Fqd-IM-4ay"/>
@@ -243,6 +243,7 @@ DealShift StackForge offers a seamless, intuitive interface that makes every gam
                         <viewLayoutGuide key="safeArea" id="FEK-ts-at8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FEK-ts-at8" firstAttribute="trailing" secondItem="fuw-ZH-Nnr" secondAttribute="trailing" constant="16" id="5EM-re-tYx"/>
                             <constraint firstItem="2uO-gE-4hl" firstAttribute="leading" secondItem="XN9-hi-040" secondAttribute="leading" id="9c7-hl-ERr"/>
                             <constraint firstAttribute="bottom" secondItem="ATy-dm-KwJ" secondAttribute="bottom" id="FKs-OU-XLK"/>
                             <constraint firstAttribute="bottom" secondItem="2uO-gE-4hl" secondAttribute="bottom" id="MfG-uu-GA9"/>
@@ -251,7 +252,6 @@ DealShift StackForge offers a seamless, intuitive interface that makes every gam
                             <constraint firstAttribute="trailing" secondItem="2uO-gE-4hl" secondAttribute="trailing" id="XS1-Hs-GtI"/>
                             <constraint firstItem="ATy-dm-KwJ" firstAttribute="top" secondItem="XN9-hi-040" secondAttribute="top" id="mMw-rb-Bxn"/>
                             <constraint firstAttribute="trailing" secondItem="ATy-dm-KwJ" secondAttribute="trailing" id="osb-cn-Ksc"/>
-                            <constraint firstItem="fuw-ZH-Nnr" firstAttribute="leading" secondItem="FEK-ts-at8" secondAttribute="leading" constant="16" id="roM-OX-dJe"/>
                             <constraint firstItem="ATy-dm-KwJ" firstAttribute="leading" secondItem="XN9-hi-040" secondAttribute="leading" id="vF4-fI-T26"/>
                             <constraint firstItem="0Kh-dU-nkr" firstAttribute="centerY" secondItem="XN9-hi-040" secondAttribute="centerY" id="x3m-fg-kEA"/>
                             <constraint firstItem="fuw-ZH-Nnr" firstAttribute="top" secondItem="FEK-ts-at8" secondAttribute="top" constant="16" id="zsC-na-Bke"/>
