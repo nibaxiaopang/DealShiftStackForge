@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		728A2D6E8BF416DBACB39227 /* Pods_DealShiftStackForge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B24C64B5A1AA1B071A4C47 /* Pods_DealShiftStackForge.framework */; };
+		FFA2B7BC2CE605B0002D3755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA2B7B32CE605B0002D3755 /* Assets.xcassets */; };
+		FFA2B7BE2CE605B0002D3755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA2B7B62CE605B0002D3755 /* LaunchScreen.storyboard */; };
+		FFA2B7BF2CE605B0002D3755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA2B7B82CE605B0002D3755 /* Main.storyboard */; };
+		FFA2B7C02CE605B0002D3755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7B22CE605B0002D3755 /* AppDelegate.swift */; };
+		FFA2B7C12CE605B0002D3755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7B92CE605B0002D3755 /* SceneDelegate.swift */; };
+		FFA2B7C22CE605B0002D3755 /* StackForgeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7BA2CE605B0002D3755 /* StackForgeHomeViewController.swift */; };
+		FFA2B7C42CE6064F002D3755 /* Win.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFA2B7C32CE6064F002D3755 /* Win.gif */; };
+		FFA2B7C62CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7C52CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift */; };
+		FFA2B7C82CE606E1002D3755 /* UIImage+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7C72CE606E1002D3755 /* UIImage+gif.swift */; };
+		FFA2B7CA2CE606FC002D3755 /* StackForgeDiceCardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7C92CE606FA002D3755 /* StackForgeDiceCardGameViewController.swift */; };
+		FFA2B7CC2CE6070A002D3755 /* StackForgeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7CB2CE6070A002D3755 /* StackForgeSettingViewController.swift */; };
+		FFA2B7CE2CE60717002D3755 /* StackForgeAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7CD2CE60717002D3755 /* StackForgeAboutViewController.swift */; };
+		FFA2B7D02CE60723002D3755 /* StackForgeFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7CF2CE60723002D3755 /* StackForgeFeedbackViewController.swift */; };
+		FFA2B7D22CE60730002D3755 /* StackForgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D12CE60730002D3755 /* StackForgeUtils.swift */; };
+		FFA2B7D42CE60740002D3755 /* StackForgePrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */; };
+		FFA2B7D62CE607BA002D3755 /* StackForgeGameHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */; };
+		FFA2B7D82CE607D3002D3755 /* StackForgeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8828370A9CE10C90F2F31303 /* Pods-DealShiftStackForge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealShiftStackForge.debug.xcconfig"; path = "Target Support Files/Pods-DealShiftStackForge/Pods-DealShiftStackForge.debug.xcconfig"; sourceTree = "<group>"; };
+		CF342E396D0CD077AE9D6756 /* Pods-DealShiftStackForge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealShiftStackForge.release.xcconfig"; path = "Target Support Files/Pods-DealShiftStackForge/Pods-DealShiftStackForge.release.xcconfig"; sourceTree = "<group>"; };
+		F5B24C64B5A1AA1B071A4C47 /* Pods_DealShiftStackForge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealShiftStackForge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA2B79A2CE6059E002D3755 /* DealShiftStackForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealShiftStackForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA2B7B22CE605B0002D3755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA2B7B32CE605B0002D3755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA2B7B42CE605B0002D3755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA2B7B52CE605B0002D3755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFA2B7B72CE605B0002D3755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA2B7B92CE605B0002D3755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFA2B7BA2CE605B0002D3755 /* StackForgeHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeHomeViewController.swift; sourceTree = "<group>"; };
+		FFA2B7C32CE6064F002D3755 /* Win.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Win.gif; sourceTree = "<group>"; };
+		FFA2B7C52CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeThreeCardMonteViewController.swift; sourceTree = "<group>"; };
+		FFA2B7C72CE606E1002D3755 /* UIImage+gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+gif.swift"; sourceTree = "<group>"; };
+		FFA2B7C92CE606FA002D3755 /* StackForgeDiceCardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeDiceCardGameViewController.swift; sourceTree = "<group>"; };
+		FFA2B7CB2CE6070A002D3755 /* StackForgeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeSettingViewController.swift; sourceTree = "<group>"; };
+		FFA2B7CD2CE60717002D3755 /* StackForgeAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeAboutViewController.swift; sourceTree = "<group>"; };
+		FFA2B7CF2CE60723002D3755 /* StackForgeFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeFeedbackViewController.swift; sourceTree = "<group>"; };
+		FFA2B7D12CE60730002D3755 /* StackForgeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeUtils.swift; sourceTree = "<group>"; };
+		FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgePrivacyViewController.swift; sourceTree = "<group>"; };
+		FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeGameHallViewController.swift; sourceTree = "<group>"; };
+		FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA2B7972CE6059E002D3755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728A2D6E8BF416DBACB39227 /* Pods_DealShiftStackForge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1E4D35497AEC03B5ACB478 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8828370A9CE10C90F2F31303 /* Pods-DealShiftStackForge.debug.xcconfig */,
+				CF342E396D0CD077AE9D6756 /* Pods-DealShiftStackForge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C61508705D6287C3DAF90CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B24C64B5A1AA1B071A4C47 /* Pods_DealShiftStackForge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA2B7912CE6059E002D3755 = {
+			isa = PBXGroup;
+			children = (
+				FFA2B7BB2CE605B0002D3755 /* DealShiftStackForge */,
+				FFA2B79B2CE6059E002D3755 /* Products */,
+				2D1E4D35497AEC03B5ACB478 /* Pods */,
+				C61508705D6287C3DAF90CC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA2B79B2CE6059E002D3755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2B79A2CE6059E002D3755 /* DealShiftStackForge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA2B7BB2CE605B0002D3755 /* DealShiftStackForge */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2B7B22CE605B0002D3755 /* AppDelegate.swift */,
+				FFA2B7B92CE605B0002D3755 /* SceneDelegate.swift */,
+				FFA2B7B32CE605B0002D3755 /* Assets.xcassets */,
+				FFA2B7B42CE605B0002D3755 /* Info.plist */,
+				FFA2B7B62CE605B0002D3755 /* LaunchScreen.storyboard */,
+				FFA2B7B82CE605B0002D3755 /* Main.storyboard */,
+				FFA2B7BA2CE605B0002D3755 /* StackForgeHomeViewController.swift */,
+				FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */,
+				FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */,
+				FFA2B7C52CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift */,
+				FFA2B7C72CE606E1002D3755 /* UIImage+gif.swift */,
+				FFA2B7C92CE606FA002D3755 /* StackForgeDiceCardGameViewController.swift */,
+				FFA2B7CB2CE6070A002D3755 /* StackForgeSettingViewController.swift */,
+				FFA2B7CD2CE60717002D3755 /* StackForgeAboutViewController.swift */,
+				FFA2B7CF2CE60723002D3755 /* StackForgeFeedbackViewController.swift */,
+				FFA2B7D12CE60730002D3755 /* StackForgeUtils.swift */,
+				FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */,
+				FFA2B7C32CE6064F002D3755 /* Win.gif */,
+			);
+			path = DealShiftStackForge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA2B7992CE6059E002D3755 /* DealShiftStackForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA2B7AD2CE6059F002D3755 /* Build configuration list for PBXNativeTarget "DealShiftStackForge" */;
+			buildPhases = (
+				8BDB7DD7462A301E86936A21 /* [CP] Check Pods Manifest.lock */,
+				FFA2B7962CE6059E002D3755 /* Sources */,
+				FFA2B7972CE6059E002D3755 /* Frameworks */,
+				FFA2B7982CE6059E002D3755 /* Resources */,
+				116B77730CFACEE7BE1E7037 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DealShiftStackForge;
+			productName = DealShiftStackForge;
+			productReference = FFA2B79A2CE6059E002D3755 /* DealShiftStackForge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA2B7922CE6059E002D3755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FFA2B7992CE6059E002D3755 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FFA2B7952CE6059E002D3755 /* Build configuration list for PBXProject "DealShiftStackForge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA2B7912CE6059E002D3755;
+			productRefGroup = FFA2B79B2CE6059E002D3755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA2B7992CE6059E002D3755 /* DealShiftStackForge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA2B7982CE6059E002D3755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA2B7BC2CE605B0002D3755 /* Assets.xcassets in Resources */,
+				FFA2B7C42CE6064F002D3755 /* Win.gif in Resources */,
+				FFA2B7BE2CE605B0002D3755 /* LaunchScreen.storyboard in Resources */,
+				FFA2B7BF2CE605B0002D3755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		116B77730CFACEE7BE1E7037 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DealShiftStackForge/Pods-DealShiftStackForge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DealShiftStackForge/Pods-DealShiftStackForge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DealShiftStackForge/Pods-DealShiftStackForge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDB7DD7462A301E86936A21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DealShiftStackForge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA2B7962CE6059E002D3755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA2B7D42CE60740002D3755 /* StackForgePrivacyViewController.swift in Sources */,
+				FFA2B7C02CE605B0002D3755 /* AppDelegate.swift in Sources */,
+				FFA2B7C82CE606E1002D3755 /* UIImage+gif.swift in Sources */,
+				FFA2B7C12CE605B0002D3755 /* SceneDelegate.swift in Sources */,
+				FFA2B7C22CE605B0002D3755 /* StackForgeHomeViewController.swift in Sources */,
+				FFA2B7C62CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift in Sources */,
+				FFA2B7D82CE607D3002D3755 /* StackForgeNavigationController.swift in Sources */,
+				FFA2B7D22CE60730002D3755 /* StackForgeUtils.swift in Sources */,
+				FFA2B7CC2CE6070A002D3755 /* StackForgeSettingViewController.swift in Sources */,
+				FFA2B7D62CE607BA002D3755 /* StackForgeGameHallViewController.swift in Sources */,
+				FFA2B7CE2CE60717002D3755 /* StackForgeAboutViewController.swift in Sources */,
+				FFA2B7D02CE60723002D3755 /* StackForgeFeedbackViewController.swift in Sources */,
+				FFA2B7CA2CE606FC002D3755 /* StackForgeDiceCardGameViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFA2B7B62CE605B0002D3755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA2B7B52CE605B0002D3755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA2B7B82CE605B0002D3755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA2B7B72CE605B0002D3755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA2B7AE2CE6059F002D3755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8828370A9CE10C90F2F31303 /* Pods-DealShiftStackForge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DealShiftStackForge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DealShift StackForge";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DealShiftStackForge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFA2B7AF2CE6059F002D3755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF342E396D0CD077AE9D6756 /* Pods-DealShiftStackForge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DealShiftStackForge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DealShift StackForge";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DealShiftStackForge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FFA2B7B02CE6059F002D3755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFA2B7B12CE6059F002D3755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA2B7952CE6059E002D3755 /* Build configuration list for PBXProject "DealShiftStackForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA2B7B02CE6059F002D3755 /* Debug */,
+				FFA2B7B12CE6059F002D3755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA2B7AD2CE6059F002D3755 /* Build configuration list for PBXNativeTarget "DealShiftStackForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA2B7AE2CE6059F002D3755 /* Debug */,
+				FFA2B7AF2CE6059F002D3755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA2B7922CE6059E002D3755 /* Project object */;
+}

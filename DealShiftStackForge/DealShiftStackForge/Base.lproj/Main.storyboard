@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W6N-1i-rf1">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stack Forge About View Controller-->
+        <scene sceneID="w91-PQ-gTE">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OhL-Ei-XII" customClass="StackForgeAboutViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXg-3G-V6m">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="gFq-fX-ADr">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-59-Sur">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Yp6-YH-BpK"/>
+                                    <constraint firstAttribute="height" constant="40" id="pBc-da-eGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="OhL-Ei-XII" eventType="touchUpInside" id="z3t-kP-P0E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91u-zd-5IP">
+                                <rect key="frame" x="383.33333333333331" y="22" width="85.666666666666686" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itx-ed-8AI">
+                                <rect key="frame" x="75" y="80" width="702" height="268"/>
+                                <color key="backgroundColor" name="appColor_white_50"/>
+                                <string key="text">DealShift StackForge is your ultimate destination for engaging, skill-testing card and dice games that challenge both memory and strategy. Our app combines classic games with modern twists, creating an experience that’s simple to learn yet highly entertaining for all ages.
+
+With Three Card Monte, players sharpen their observational skills and memory by tracking the position of the elusive Ace as it shuffles among two Jokers. This fast-paced guessing game encourages focus and quick thinking, rewarding correct guesses with celebratory animations and offering endless replay value with its “Play Again” feature. Perfect for a quick mental exercise or a fun break, Three Card Monte keeps players coming back to improve their accuracy and reaction time.
+
+In Card with Dice, players test their arithmetic and strategy by rolling dice and matching card combinations to reach a target sum. With twelve cards ranging from Ace to Queen and a pair of dice, players select, flip, and combine cards to equal the rolled total. This game rewards logical thinking, as correct guesses disable cards, allowing players to aim for new combinations. Dice rolls and card flipping create a dynamic, interactive gameplay experience, complete with user feedback and challenge.
+
+DealShift StackForge offers a seamless, intuitive interface that makes every game engaging and easy to navigate. Whether you’re looking to enhance your observation skills, practice math-based strategies, or simply enjoy interactive gameplay, DealShift StackForge delivers fun and learning in equal measure.</string>
+                                <color key="textColor" name="appColor_black"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oy7-nk-t7C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="91u-zd-5IP" firstAttribute="centerX" secondItem="QXg-3G-V6m" secondAttribute="centerX" id="3P9-ZC-jZ6"/>
+                            <constraint firstItem="YvC-59-Sur" firstAttribute="leading" secondItem="oy7-nk-t7C" secondAttribute="leading" constant="16" id="3wl-Wh-gj1"/>
+                            <constraint firstItem="oy7-nk-t7C" firstAttribute="trailing" secondItem="itx-ed-8AI" secondAttribute="trailing" constant="16" id="4UH-3r-lpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gFq-fX-ADr" secondAttribute="trailing" id="Aec-un-6IO"/>
+                            <constraint firstItem="oy7-nk-t7C" firstAttribute="bottom" secondItem="itx-ed-8AI" secondAttribute="bottom" constant="24" id="CJa-Xw-fC2"/>
+                            <constraint firstItem="YvC-59-Sur" firstAttribute="top" secondItem="oy7-nk-t7C" secondAttribute="top" constant="16" id="CVj-Ln-7JQ"/>
+                            <constraint firstItem="itx-ed-8AI" firstAttribute="top" secondItem="YvC-59-Sur" secondAttribute="bottom" constant="24" id="Ge6-co-lNx"/>
+                            <constraint firstItem="itx-ed-8AI" firstAttribute="leading" secondItem="oy7-nk-t7C" secondAttribute="leading" constant="16" id="Lm4-3j-pLy"/>
+                            <constraint firstItem="gFq-fX-ADr" firstAttribute="leading" secondItem="QXg-3G-V6m" secondAttribute="leading" id="M3a-Yl-ldF"/>
+                            <constraint firstItem="gFq-fX-ADr" firstAttribute="top" secondItem="QXg-3G-V6m" secondAttribute="top" id="VGb-09-MV3"/>
+                            <constraint firstItem="91u-zd-5IP" firstAttribute="centerY" secondItem="YvC-59-Sur" secondAttribute="centerY" id="YcX-hS-T5b"/>
+                            <constraint firstAttribute="bottom" secondItem="gFq-fX-ADr" secondAttribute="bottom" id="uAP-YM-aKL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5wD-6C-Aus"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qA-Xl-np9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="-802"/>
+        </scene>
+        <!--Stack Forge Navigation Controller-->
+        <scene sceneID="ox3-Ub-3cO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="W6N-1i-rf1" customClass="StackForgeNavigationController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K2g-JS-hYz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kSf-yC-e8a" kind="relationship" relationship="rootViewController" id="2VI-yN-C65"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ve2-nm-RBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-792" y="-22"/>
+        </scene>
+        <!--Stack Forge Setting View Controller-->
+        <scene sceneID="0tx-VV-cgM">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lH2-6t-ADy" customClass="StackForgeSettingViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LgK-Ty-xfk">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-aV-Jup">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTZ-FO-Q1i">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T0t-PW-5Mx"/>
+                                    <constraint firstAttribute="width" constant="120" id="hh7-oI-nXt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="lH2-6t-ADy" eventType="touchUpInside" id="oAc-Pv-5IS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75w-dG-kwj">
+                                <rect key="frame" x="400.66666666666669" y="22" width="50.666666666666686" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-R7-fjM">
+                                <rect key="frame" x="303.33333333333331" y="80" width="245.66666666666669" height="268"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTd-Py-urp">
+                                        <rect key="frame" x="0.0" y="0.0" width="245.66666666666666" height="82.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oTd-Py-urp" secondAttribute="height" multiplier="2.97179" id="Vvb-Hu-AOc"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_about"/>
+                                        <connections>
+                                            <segue destination="OhL-Ei-XII" kind="show" id="bci-Sj-Z0c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdH-MS-t1Y">
+                                        <rect key="frame" x="0.0" y="92.666666666666657" width="245.66666666666666" height="82.666666666666657"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_privacy"/>
+                                        <connections>
+                                            <segue destination="LWo-GY-T9b" kind="show" id="v4u-M4-ZTK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bK-tb-cYz">
+                                        <rect key="frame" x="0.0" y="185.33333333333331" width="245.66666666666666" height="82.666666666666686"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_feedback"/>
+                                        <connections>
+                                            <segue destination="y6Q-tY-kjU" kind="show" id="ndP-Si-xLT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wW3-20-scI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2bc-R7-fjM" firstAttribute="top" secondItem="gTZ-FO-Q1i" secondAttribute="bottom" constant="24" id="1EU-8R-2eN"/>
+                            <constraint firstItem="2bc-R7-fjM" firstAttribute="centerX" secondItem="dxE-aV-Jup" secondAttribute="centerX" id="5yj-wp-FAQ"/>
+                            <constraint firstItem="dxE-aV-Jup" firstAttribute="leading" secondItem="LgK-Ty-xfk" secondAttribute="leading" id="D21-82-Lua"/>
+                            <constraint firstItem="gTZ-FO-Q1i" firstAttribute="leading" secondItem="wW3-20-scI" secondAttribute="leading" constant="16" id="Ebv-hY-iM4"/>
+                            <constraint firstAttribute="trailing" secondItem="dxE-aV-Jup" secondAttribute="trailing" id="Jee-6k-U5b"/>
+                            <constraint firstItem="gTZ-FO-Q1i" firstAttribute="top" secondItem="wW3-20-scI" secondAttribute="top" constant="16" id="Lwg-6t-982"/>
+                            <constraint firstItem="75w-dG-kwj" firstAttribute="centerY" secondItem="gTZ-FO-Q1i" secondAttribute="centerY" id="XIH-Oq-h7x"/>
+                            <constraint firstItem="wW3-20-scI" firstAttribute="bottom" secondItem="2bc-R7-fjM" secondAttribute="bottom" constant="24" id="fgq-XA-rbp"/>
+                            <constraint firstItem="75w-dG-kwj" firstAttribute="centerX" secondItem="LgK-Ty-xfk" secondAttribute="centerX" id="hQo-sc-dYJ"/>
+                            <constraint firstItem="dxE-aV-Jup" firstAttribute="top" secondItem="LgK-Ty-xfk" secondAttribute="top" id="ne6-po-j8h"/>
+                            <constraint firstAttribute="bottom" secondItem="dxE-aV-Jup" secondAttribute="bottom" id="oC5-6W-usp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CHr-jJ-xC8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVl-oq-AfH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="-801"/>
+        </scene>
+        <!--Stack Forge Privacy View Controller-->
+        <scene sceneID="397-do-abU">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWo-GY-T9b" customClass="StackForgePrivacyViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XN9-hi-040">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ATy-dm-KwJ">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-ZH-Nnr">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fqd-IM-4ay"/>
+                                    <constraint firstAttribute="width" constant="120" id="Pt9-q8-KYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="LWo-GY-T9b" eventType="touchUpInside" id="lUs-I3-udB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBG-g3-9D9">
+                                <rect key="frame" x="361.33333333333331" y="22" width="129.66666666666669" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zND-gV-9WV">
+                                <rect key="frame" x="75" y="80" width="702" height="268"/>
+                                <color key="backgroundColor" name="appColor_white_50"/>
+                                <string key="text">Last updated: November 13, 2024
+
+This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Free Privacy Policy Generator.
+
+Interpretation and Definitions
+Interpretation
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+Definitions
+For the purposes of this Privacy Policy:
+
+Account means a unique account created for You to access our Service or parts of our Service.
+
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+Application refers to DealShift StackForge, the software program provided by the Company.
+
+Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to DealShift StackForge.
+
+Country refers to: Gujarat, India
+
+Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+Personal Data is any information that relates to an identified or identifiable individual.
+
+Service refers to the Application.
+
+Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+
+Usage Data refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+
+You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+Collecting and Using Your Personal Data
+Types of Data Collected
+Personal Data
+While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+
+Usage Data
+Usage Data
+Usage Data is collected automatically when using the Service.
+
+Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+
+We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+
+Use of Your Personal Data
+The Company may use Personal Data for the following purposes:
+
+To provide and maintain our Service, including to monitor the usage of our Service.
+
+To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.
+
+For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.
+
+To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
+
+To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
+
+To manage Your requests: To attend and manage Your requests to Us.
+
+For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.
+
+For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
+
+We may share Your personal information in the following situations:
+
+With Service Providers: We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
+For business transfers: We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
+With Affiliates: We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
+With business partners: We may share Your information with Our business partners to offer You certain products, services or promotions.
+With other users: when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.
+With Your consent: We may disclose Your personal information for any other purpose with Your consent.
+Retention of Your Personal Data
+The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+
+The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
+
+Transfer of Your Personal Data
+Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
+
+Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.
+
+The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
+
+Delete Your Personal Data
+You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
+
+Our Service may give You the ability to delete certain information about You from within the Service.
+
+You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.
+
+Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.
+
+Disclosure of Your Personal Data
+Business Transactions
+If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
+
+Law enforcement
+Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+
+Other legal requirements
+The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
+
+Comply with a legal obligation
+Protect and defend the rights or property of the Company
+Prevent or investigate possible wrongdoing in connection with the Service
+Protect the personal safety of Users of the Service or the public
+Protect against legal liability
+Security of Your Personal Data
+The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+
+Children's Privacy
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+
+If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+
+Links to Other Websites
+Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
+
+We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+
+Changes to this Privacy Policy
+We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+
+We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+Contact Us
+If you have any questions about this Privacy Policy, You can contact us:
+
+By email: help@dealshiftstackforge.com</string>
+                                <color key="textColor" name="appColor_black"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FEK-ts-at8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FEK-ts-at8" firstAttribute="trailing" secondItem="zND-gV-9WV" secondAttribute="trailing" constant="16" id="3K4-fK-Ufu"/>
+                            <constraint firstItem="FEK-ts-at8" firstAttribute="bottom" secondItem="zND-gV-9WV" secondAttribute="bottom" constant="24" id="3l3-ct-rAQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ATy-dm-KwJ" secondAttribute="bottom" id="FKs-OU-XLK"/>
+                            <constraint firstItem="UBG-g3-9D9" firstAttribute="centerX" secondItem="XN9-hi-040" secondAttribute="centerX" id="OeQ-Q0-8Zx"/>
+                            <constraint firstItem="zND-gV-9WV" firstAttribute="top" secondItem="fuw-ZH-Nnr" secondAttribute="bottom" constant="24" id="kfj-nj-qdy"/>
+                            <constraint firstItem="ATy-dm-KwJ" firstAttribute="top" secondItem="XN9-hi-040" secondAttribute="top" id="mMw-rb-Bxn"/>
+                            <constraint firstAttribute="trailing" secondItem="ATy-dm-KwJ" secondAttribute="trailing" id="osb-cn-Ksc"/>
+                            <constraint firstItem="UBG-g3-9D9" firstAttribute="centerY" secondItem="fuw-ZH-Nnr" secondAttribute="centerY" id="reZ-ql-ygo"/>
+                            <constraint firstItem="fuw-ZH-Nnr" firstAttribute="leading" secondItem="FEK-ts-at8" secondAttribute="leading" constant="16" id="roM-OX-dJe"/>
+                            <constraint firstItem="ATy-dm-KwJ" firstAttribute="leading" secondItem="XN9-hi-040" secondAttribute="leading" id="vF4-fI-T26"/>
+                            <constraint firstItem="zND-gV-9WV" firstAttribute="leading" secondItem="FEK-ts-at8" secondAttribute="leading" constant="16" id="ye7-hc-mjP"/>
+                            <constraint firstItem="fuw-ZH-Nnr" firstAttribute="top" secondItem="FEK-ts-at8" secondAttribute="top" constant="16" id="zsC-na-Bke"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CLw-yi-pMR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXP-dM-QYi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-802"/>
+        </scene>
+        <!--Stack Forge Feedback View Controller-->
+        <scene sceneID="NqD-Zo-TdB">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y6Q-tY-kjU" customClass="StackForgeFeedbackViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEi-rU-wPH">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-eY-uEP">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGI-fv-R4C">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CvO-Lr-Ctf"/>
+                                    <constraint firstAttribute="width" constant="120" id="kmG-C6-a1M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="y6Q-tY-kjU" eventType="touchUpInside" id="D2f-Bb-XMx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU5-99-UhX">
+                                <rect key="frame" x="382.33333333333331" y="22" width="87.333333333333314" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEv-3c-puH">
+                                <rect key="frame" x="301" y="312" width="250" height="44"/>
+                                <color key="backgroundColor" name="appColor_red"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ig2-wB-tbb"/>
+                                    <constraint firstAttribute="height" constant="44" id="ONz-K6-uWR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit Feedback">
+                                    <color key="titleColor" name="appColor_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="y6Q-tY-kjU" eventType="touchUpInside" id="ekk-CG-zlm"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XZb-e2-9Li">
+                                <rect key="frame" x="159" y="149.66666666666666" width="534" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-b7-J0U">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="VGy-vy-gUM"/>
+                                            <constraint firstAttribute="height" constant="94" id="xXb-kM-8mt"/>
+                                        </constraints>
+                                        <color key="tintColor" name="appColor_red"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="47"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJf-M8-i8z">
+                                        <rect key="frame" x="110" y="0.0" width="94" height="94"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <color key="tintColor" name="appColor_red"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="47"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4z-Sn-tp1">
+                                        <rect key="frame" x="220" y="0.0" width="94" height="94"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <color key="tintColor" name="appColor_red"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="47"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbJ-3k-o9W">
+                                        <rect key="frame" x="330" y="0.0" width="94" height="94"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <color key="tintColor" name="appColor_red"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="47"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-a4-2vF">
+                                        <rect key="frame" x="440" y="0.0" width="94" height="94"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <color key="tintColor" name="appColor_red"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="47"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wOb-UA-hRo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LGI-fv-R4C" firstAttribute="leading" secondItem="wOb-UA-hRo" secondAttribute="leading" constant="16" id="2a4-Np-ZGr"/>
+                            <constraint firstItem="fU5-99-UhX" firstAttribute="centerY" secondItem="LGI-fv-R4C" secondAttribute="centerY" id="4HU-Qj-vJn"/>
+                            <constraint firstItem="JjK-eY-uEP" firstAttribute="leading" secondItem="VEi-rU-wPH" secondAttribute="leading" id="4VW-QM-utU"/>
+                            <constraint firstAttribute="trailing" secondItem="JjK-eY-uEP" secondAttribute="trailing" id="FTc-3l-Y6d"/>
+                            <constraint firstItem="DEv-3c-puH" firstAttribute="centerX" secondItem="JjK-eY-uEP" secondAttribute="centerX" id="Jsg-Wv-I2l"/>
+                            <constraint firstItem="JjK-eY-uEP" firstAttribute="top" secondItem="VEi-rU-wPH" secondAttribute="top" id="PfF-Cx-XHX"/>
+                            <constraint firstAttribute="bottom" secondItem="JjK-eY-uEP" secondAttribute="bottom" id="Tda-QC-ziG"/>
+                            <constraint firstItem="wOb-UA-hRo" firstAttribute="bottom" secondItem="DEv-3c-puH" secondAttribute="bottom" constant="16" id="Vzq-Br-Z62"/>
+                            <constraint firstItem="XZb-e2-9Li" firstAttribute="centerX" secondItem="VEi-rU-wPH" secondAttribute="centerX" id="gM1-Ey-O1s"/>
+                            <constraint firstItem="XZb-e2-9Li" firstAttribute="centerY" secondItem="VEi-rU-wPH" secondAttribute="centerY" id="l1e-2Y-8GK"/>
+                            <constraint firstItem="LGI-fv-R4C" firstAttribute="top" secondItem="wOb-UA-hRo" secondAttribute="top" constant="16" id="qY0-LJ-9hg"/>
+                            <constraint firstItem="fU5-99-UhX" firstAttribute="centerX" secondItem="VEi-rU-wPH" secondAttribute="centerX" id="rzG-js-Ypz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ynG-jv-c5o"/>
+                    <connections>
+                        <outlet property="button1" destination="kGg-b7-J0U" id="pVW-vd-S5Z"/>
+                        <outlet property="button2" destination="bJf-M8-i8z" id="xEq-vs-gzV"/>
+                        <outlet property="button3" destination="u4z-Sn-tp1" id="07D-CA-UmE"/>
+                        <outlet property="button4" destination="SbJ-3k-o9W" id="H3X-4V-AwM"/>
+                        <outlet property="button5" destination="U0Y-a4-2vF" id="Jb4-gX-j3P"/>
+                        <outlet property="stackView" destination="XZb-e2-9Li" id="nlM-sX-qvI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbW-K8-wqj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="-802"/>
+        </scene>
+        <!--Stack Forge Game Hall View Controller-->
+        <scene sceneID="Q1L-1d-AO9">
+            <objects>
+                <viewController id="Qkm-GU-8rF" customClass="StackForgeGameHallViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TaT-7u-ufm">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg_home" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-yl-NEQ">
+                                <rect key="frame" x="0.0" y="-1" width="853" height="394"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DealShift StackForge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFc-TW-v2L">
+                                <rect key="frame" x="326.66666666666669" y="16" width="198.66666666666669" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4PS-eO-zTJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-SP-8al">
+                                <rect key="frame" x="59" y="272" width="734" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Three Card Monte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM5-bI-qUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="66"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                        <color key="textColor" name="appColor_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card With Dice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppM-NG-OrU">
+                                        <rect key="frame" x="244.66666666666669" y="0.0" width="244.66666666666669" height="66"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                        <color key="textColor" name="appColor_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3R-ei-GGf">
+                                        <rect key="frame" x="489.33333333333343" y="0.0" width="244.66666666666669" height="66"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                        <color key="textColor" name="appColor_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="fiY-0I-54k"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="efG-8S-FlC">
+                                <rect key="frame" x="59" y="131" width="734" height="197"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytk-7b-jiR">
+                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="197"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="rxs-83-Pte" kind="show" id="hAJ-C3-cbL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-oM-fqm">
+                                        <rect key="frame" x="244.66666666666669" y="0.0" width="244.66666666666669" height="197"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="MwC-ph-a09" kind="show" id="RJJ-eP-e0h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-kP-9tT">
+                                        <rect key="frame" x="489.33333333333343" y="0.0" width="244.66666666666669" height="197"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="lH2-6t-ADy" kind="show" id="NO9-tg-g8O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83y-Jc-Ogd">
+                                <rect key="frame" x="0.0" y="60" width="852" height="2"/>
+                                <color key="backgroundColor" name="appColor_white_50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="8sS-wh-8fg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jny-PU-59Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BJV-yl-NEQ" secondAttribute="trailing" constant="-1" id="1O1-hM-a0n"/>
+                            <constraint firstItem="XFc-TW-v2L" firstAttribute="top" secondItem="jny-PU-59Q" secondAttribute="top" constant="16" id="4VZ-fu-VCN"/>
+                            <constraint firstItem="efG-8S-FlC" firstAttribute="height" secondItem="BJV-yl-NEQ" secondAttribute="height" multiplier="0.5" id="9J7-6A-RBC"/>
+                            <constraint firstItem="XFc-TW-v2L" firstAttribute="centerX" secondItem="TaT-7u-ufm" secondAttribute="centerX" id="Dex-kT-Ddc"/>
+                            <constraint firstItem="BJV-yl-NEQ" firstAttribute="top" secondItem="TaT-7u-ufm" secondAttribute="top" constant="-1" id="EGx-KZ-pFC"/>
+                            <constraint firstItem="BJV-yl-NEQ" firstAttribute="leading" secondItem="TaT-7u-ufm" secondAttribute="leading" id="GF1-t4-M2v"/>
+                            <constraint firstItem="jny-PU-59Q" firstAttribute="trailing" secondItem="9zl-SP-8al" secondAttribute="trailing" id="Kmw-Ot-ZFq"/>
+                            <constraint firstItem="9zl-SP-8al" firstAttribute="leading" secondItem="jny-PU-59Q" secondAttribute="leading" id="P4r-hz-bdo"/>
+                            <constraint firstAttribute="trailing" secondItem="83y-Jc-Ogd" secondAttribute="trailing" id="RG5-aA-cdP"/>
+                            <constraint firstItem="efG-8S-FlC" firstAttribute="centerY" secondItem="TaT-7u-ufm" secondAttribute="centerY" constant="33" id="S42-bQ-s6E"/>
+                            <constraint firstItem="83y-Jc-Ogd" firstAttribute="top" secondItem="XFc-TW-v2L" secondAttribute="bottom" id="h01-mV-YjJ"/>
+                            <constraint firstAttribute="bottom" secondItem="BJV-yl-NEQ" secondAttribute="bottom" id="hDu-Ao-4J1"/>
+                            <constraint firstItem="83y-Jc-Ogd" firstAttribute="leading" secondItem="TaT-7u-ufm" secondAttribute="leading" id="j6S-NC-w5h"/>
+                            <constraint firstItem="efG-8S-FlC" firstAttribute="leading" secondItem="jny-PU-59Q" secondAttribute="leading" id="jKs-wG-hzp"/>
+                            <constraint firstItem="jny-PU-59Q" firstAttribute="trailing" secondItem="efG-8S-FlC" secondAttribute="trailing" id="rGY-wb-hw4"/>
+                            <constraint firstItem="9zl-SP-8al" firstAttribute="top" secondItem="efG-8S-FlC" secondAttribute="bottom" constant="-56" id="zw0-dE-Vo2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ubx-Gi-ZyA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YX-Nr-NJM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.78540772532187" y="-22.325581395348838"/>
+        </scene>
+        <!--Stack Forge Three Card Monte View Controller-->
+        <scene sceneID="NAs-LP-84a">
+            <objects>
+                <viewController storyboardIdentifier="ThreeCardMonteVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rxs-83-Pte" customClass="StackForgeThreeCardMonteViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5j-v0-kQt">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="5X7-4l-2xa">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-vf-YFk">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9K3-jW-7ud"/>
+                                    <constraint firstAttribute="width" constant="120" id="yxh-0Z-mNq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="rxs-83-Pte" eventType="touchUpInside" id="ArV-XE-BRn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Three Card Monte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1S-Yc-5nn">
+                                <rect key="frame" x="339.66666666666669" y="16" width="172.66666666666669" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4we-U1-ojI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-B2-F94">
+                                <rect key="frame" x="216.33333333333334" y="87.999999999999986" width="419.33333333333326" height="196.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-bE-ZBP">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="196.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cDf-bE-ZBP" secondAttribute="height" multiplier="1:1.5219" id="yso-Hx-4R9"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="rxs-83-Pte" eventType="touchUpInside" id="Ddf-U2-Kh1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzF-SK-g0C">
+                                        <rect key="frame" x="144.99999999999994" y="0.0" width="129.33333333333331" height="196.66666666666666"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="rxs-83-Pte" eventType="touchUpInside" id="nfj-f8-2fv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ5-8Z-6QV">
+                                        <rect key="frame" x="290.33333333333337" y="0.0" width="129" height="196.66666666666666"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="rxs-83-Pte" eventType="touchUpInside" id="9Mk-IL-qZ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-Sv-A8W">
+                                <rect key="frame" x="75" y="300.66666666666669" width="702" height="55.333333333333314"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hs-rZ-Nbh">
+                                <rect key="frame" x="288.33333333333337" y="59" width="275.33333333333337" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8hs-rZ-Nbh" secondAttribute="height" id="g08-5N-VWU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTi-Aq-KBR">
+                                <rect key="frame" x="637" y="16" width="140" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fbm-LP-I5X"/>
+                                    <constraint firstAttribute="width" constant="140" id="Lak-pJ-csh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playAgainTapped:" destination="rxs-83-Pte" eventType="touchUpInside" id="U5s-bc-FXd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hyc-QH-vuc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8hs-rZ-Nbh" firstAttribute="centerX" secondItem="o5j-v0-kQt" secondAttribute="centerX" id="0Mb-eO-Ric"/>
+                            <constraint firstItem="b7H-B2-F94" firstAttribute="top" secondItem="N1S-Yc-5nn" secondAttribute="bottom" constant="32" id="45s-a1-wEm"/>
+                            <constraint firstItem="5X7-4l-2xa" firstAttribute="leading" secondItem="o5j-v0-kQt" secondAttribute="leading" id="5mZ-54-VMx"/>
+                            <constraint firstItem="gjN-Sv-A8W" firstAttribute="top" secondItem="b7H-B2-F94" secondAttribute="bottom" constant="16" id="6AW-rN-dgH"/>
+                            <constraint firstItem="N1S-Yc-5nn" firstAttribute="centerY" secondItem="C5J-vf-YFk" secondAttribute="centerY" id="7rN-VQ-ATg"/>
+                            <constraint firstItem="5X7-4l-2xa" firstAttribute="top" secondItem="o5j-v0-kQt" secondAttribute="top" id="BlD-BD-1Ip"/>
+                            <constraint firstItem="b7H-B2-F94" firstAttribute="centerX" secondItem="5X7-4l-2xa" secondAttribute="centerX" id="ESF-HP-iud"/>
+                            <constraint firstItem="Hyc-QH-vuc" firstAttribute="trailing" secondItem="tTi-Aq-KBR" secondAttribute="trailing" constant="16" id="GcF-oz-0f1"/>
+                            <constraint firstItem="gjN-Sv-A8W" firstAttribute="leading" secondItem="Hyc-QH-vuc" secondAttribute="leading" constant="16" id="JgY-zS-ucC"/>
+                            <constraint firstItem="tTi-Aq-KBR" firstAttribute="top" secondItem="Hyc-QH-vuc" secondAttribute="top" constant="16" id="MUw-a7-YSV"/>
+                            <constraint firstItem="C5J-vf-YFk" firstAttribute="top" secondItem="Hyc-QH-vuc" secondAttribute="top" constant="16" id="ROO-0G-uy8"/>
+                            <constraint firstItem="8hs-rZ-Nbh" firstAttribute="height" secondItem="5X7-4l-2xa" secondAttribute="height" multiplier="0.7" id="Rfc-4f-TPK"/>
+                            <constraint firstAttribute="trailing" secondItem="5X7-4l-2xa" secondAttribute="trailing" id="SRK-Bg-DrQ"/>
+                            <constraint firstItem="Hyc-QH-vuc" firstAttribute="trailing" secondItem="gjN-Sv-A8W" secondAttribute="trailing" constant="16" id="Yqx-iP-LQ3"/>
+                            <constraint firstItem="b7H-B2-F94" firstAttribute="height" secondItem="5X7-4l-2xa" secondAttribute="height" multiplier="0.5" id="eCS-o0-JQC"/>
+                            <constraint firstAttribute="bottom" secondItem="5X7-4l-2xa" secondAttribute="bottom" id="fFv-42-b1d"/>
+                            <constraint firstItem="N1S-Yc-5nn" firstAttribute="centerX" secondItem="o5j-v0-kQt" secondAttribute="centerX" id="nxy-0f-YFK"/>
+                            <constraint firstItem="C5J-vf-YFk" firstAttribute="leading" secondItem="Hyc-QH-vuc" secondAttribute="leading" constant="16" id="rzr-I6-Sgs"/>
+                            <constraint firstItem="8hs-rZ-Nbh" firstAttribute="centerY" secondItem="o5j-v0-kQt" secondAttribute="centerY" id="upe-7Z-r20"/>
+                            <constraint firstItem="Hyc-QH-vuc" firstAttribute="bottom" secondItem="gjN-Sv-A8W" secondAttribute="bottom" constant="16" id="vgS-qP-0Cc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dme-bi-5Si"/>
+                    <connections>
+                        <outlet property="playAgainButton" destination="tTi-Aq-KBR" id="Lqg-dD-aQw"/>
+                        <outlet property="resultLabel" destination="gjN-Sv-A8W" id="DRw-sO-03A"/>
+                        <outlet property="winGifImage" destination="8hs-rZ-Nbh" id="Mzv-Wc-ogj"/>
+                        <outletCollection property="cardButtons" destination="cDf-bE-ZBP" collectionClass="NSMutableArray" id="j1e-Cd-eSO"/>
+                        <outletCollection property="cardButtons" destination="qzF-SK-g0C" collectionClass="NSMutableArray" id="LbC-yS-dDg"/>
+                        <outletCollection property="cardButtons" destination="eJ5-8Z-6QV" collectionClass="NSMutableArray" id="DLm-e9-Llx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjj-1p-SYm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-22"/>
+        </scene>
+        <!--Stack Forge Home View Controller-->
+        <scene sceneID="aiz-wm-AcJ">
+            <objects>
+                <viewController id="kSf-yC-e8a" customClass="StackForgeHomeViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ez9-gc-dSa">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-TK-2P4">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_card_stack" translatesAutoresizingMaskIntoConstraints="NO" id="Jp6-x7-r8r">
+                                <rect key="frame" x="304.66666666666674" y="0.0" width="518" height="441"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jp6-x7-r8r" secondAttribute="height" multiplier="1.1744" id="U9l-7Q-Tpk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-Io-X2O">
+                                <rect key="frame" x="483.66666666666674" y="217" width="160" height="160"/>
+                                <color key="backgroundColor" name="appColor_red"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="FZu-pp-zly"/>
+                                    <constraint firstAttribute="width" constant="160" id="nhq-mw-uIv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" name="appColor_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Qkm-GU-8rF" kind="show" id="Mv7-GJ-aKl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-4R-Xsj">
+                                <rect key="frame" x="518.66666666666663" y="246" width="90" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="ppt-GB-GId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="36"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JyF-vq-uYp">
+                                <rect key="frame" x="59" y="48.333333333333343" width="275" height="275.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JyF-vq-uYp" secondAttribute="height" id="lGi-G5-e8I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfq-1a-hrY">
+                                <rect key="frame" x="358" y="24" width="411" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LF-b3-XhI">
+                                <rect key="frame" x="358" y="61" width="411" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DealShift StackForge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDk-KG-EUn">
+                                <rect key="frame" x="358" y="98" width="411" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Biq-dM-xpR"/>
+                        <color key="backgroundColor" name="appColor_black"/>
+                        <constraints>
+                            <constraint firstItem="JyF-vq-uYp" firstAttribute="leading" secondItem="Biq-dM-xpR" secondAttribute="leading" id="4xk-N3-qsg"/>
+                            <constraint firstItem="Jp6-x7-r8r" firstAttribute="centerX" secondItem="jDk-KG-EUn" secondAttribute="centerX" id="6YE-sV-kl6"/>
+                            <constraint firstItem="RBB-TK-2P4" firstAttribute="leading" secondItem="Ez9-gc-dSa" secondAttribute="leading" id="Bcx-EV-jgh"/>
+                            <constraint firstAttribute="bottom" secondItem="Jp6-x7-r8r" secondAttribute="bottom" constant="-48" id="CNw-2G-D3o"/>
+                            <constraint firstItem="RBB-TK-2P4" firstAttribute="top" secondItem="Ez9-gc-dSa" secondAttribute="top" id="Ffc-uc-Uzm"/>
+                            <constraint firstAttribute="trailing" secondItem="RBB-TK-2P4" secondAttribute="trailing" id="I9y-mt-p1w"/>
+                            <constraint firstItem="bfq-1a-hrY" firstAttribute="leading" secondItem="JyF-vq-uYp" secondAttribute="trailing" constant="24" id="IWr-Yz-1Dd"/>
+                            <constraint firstItem="JyF-vq-uYp" firstAttribute="height" secondItem="Ez9-gc-dSa" secondAttribute="height" multiplier="0.7" id="Jrw-Xa-5Lm"/>
+                            <constraint firstItem="HzM-4R-Xsj" firstAttribute="centerY" secondItem="Ogy-Io-X2O" secondAttribute="centerY" id="LGi-VX-9hj"/>
+                            <constraint firstItem="jDk-KG-EUn" firstAttribute="top" secondItem="4LF-b3-XhI" secondAttribute="bottom" id="QpR-cZ-FIh"/>
+                            <constraint firstItem="HzM-4R-Xsj" firstAttribute="centerX" secondItem="Ogy-Io-X2O" secondAttribute="centerX" id="UkG-Lu-RNL"/>
+                            <constraint firstItem="Biq-dM-xpR" firstAttribute="trailing" secondItem="bfq-1a-hrY" secondAttribute="trailing" constant="24" id="WNr-TD-PbN"/>
+                            <constraint firstItem="JyF-vq-uYp" firstAttribute="centerY" secondItem="Biq-dM-xpR" secondAttribute="centerY" id="WXd-BA-y9H"/>
+                            <constraint firstAttribute="bottom" secondItem="Ogy-Io-X2O" secondAttribute="bottom" constant="16" id="XLi-s4-RKs"/>
+                            <constraint firstItem="Biq-dM-xpR" firstAttribute="trailing" secondItem="4LF-b3-XhI" secondAttribute="trailing" constant="24" id="Y9i-G9-GN3"/>
+                            <constraint firstItem="Biq-dM-xpR" firstAttribute="trailing" secondItem="jDk-KG-EUn" secondAttribute="trailing" constant="24" id="b5c-74-heQ"/>
+                            <constraint firstItem="4LF-b3-XhI" firstAttribute="top" secondItem="bfq-1a-hrY" secondAttribute="bottom" id="d2W-dX-juI"/>
+                            <constraint firstItem="bfq-1a-hrY" firstAttribute="top" secondItem="Biq-dM-xpR" secondAttribute="top" constant="24" id="fFA-gc-6iP"/>
+                            <constraint firstAttribute="bottom" secondItem="RBB-TK-2P4" secondAttribute="bottom" id="ghO-UB-ZZP"/>
+                            <constraint firstItem="jDk-KG-EUn" firstAttribute="leading" secondItem="JyF-vq-uYp" secondAttribute="trailing" constant="24" id="hbC-fY-xYm"/>
+                            <constraint firstItem="4LF-b3-XhI" firstAttribute="leading" secondItem="JyF-vq-uYp" secondAttribute="trailing" constant="24" id="vsb-G3-h2U"/>
+                            <constraint firstItem="Jp6-x7-r8r" firstAttribute="top" secondItem="Ez9-gc-dSa" secondAttribute="top" id="whF-aN-SsV"/>
+                            <constraint firstItem="Ogy-Io-X2O" firstAttribute="centerX" secondItem="jDk-KG-EUn" secondAttribute="centerX" id="zCM-MP-ykn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jgF-km-bAJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jJ-5j-nBT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.103004291845494" y="-22.325581395348838"/>
+        </scene>
+        <!--Stack Forge Dice Card Game View Controller-->
+        <scene sceneID="oMx-rE-GJj">
+            <objects>
+                <viewController storyboardIdentifier="DiceAndCardGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MwC-ph-a09" customClass="StackForgeDiceCardGameViewController" customModule="DealShiftStackForge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2n-hd-1NP">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="4q4-hE-Cyj">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ja-JO-VRi">
+                                <rect key="frame" x="75" y="16" width="120" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CCU-tJ-FRa"/>
+                                    <constraint firstAttribute="height" constant="40" id="jrt-zJ-d0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="MwC-ph-a09" eventType="touchUpInside" id="MeL-8H-mZe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card With Dice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qB-KT-RYa">
+                                <rect key="frame" x="354.33333333333331" y="16" width="143.66666666666669" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7H8-Q1-hOO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-w2-3zo">
+                                <rect key="frame" x="637" y="16" width="140" height="40"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="UbF-e1-2mh"/>
+                                    <constraint firstAttribute="height" constant="40" id="zER-Mm-6pk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" name="appColor_red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetGameButtonTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="cPm-QC-H5z"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JgR-eF-VuI">
+                                <rect key="frame" x="75" y="80" width="264.66666666666669" height="268"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-rQ-Uvg">
+                                        <rect key="frame" x="0.0" y="0.0" width="264.66666666666669" height="84"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOQ-Ja-24M">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iOQ-Ja-24M" secondAttribute="height" multiplier="1:1.39636" id="WT1-4A-5eO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="8aA-xM-Ug4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDZ-kE-SQN">
+                                                <rect key="frame" x="68" y="0.0" width="60.333333333333343" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="cRZ-zJ-Nh4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzD-rM-eVP">
+                                                <rect key="frame" x="136.33333333333334" y="0.0" width="60" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="6mc-Bd-550"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rur-qE-8qh">
+                                                <rect key="frame" x="204.33333333333331" y="0.0" width="60.333333333333314" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="uQS-MQ-QPs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GpY-ji-TqR">
+                                        <rect key="frame" x="0.0" y="92" width="264.66666666666669" height="84"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGL-hf-pXT">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="G0N-UV-cN6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOh-Vd-q8Y">
+                                                <rect key="frame" x="68" y="0.0" width="60.333333333333343" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="UlG-FF-tTm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-pI-1cj">
+                                                <rect key="frame" x="136.33333333333334" y="0.0" width="60" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="b5F-VV-pAc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-h5-Hda">
+                                                <rect key="frame" x="204.33333333333331" y="0.0" width="60.333333333333314" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="WAx-nu-0gD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P0K-Cw-cdJ">
+                                        <rect key="frame" x="0.0" y="184" width="264.66666666666669" height="84"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kml-xH-B7h">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="pgu-v5-XJD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-XY-LIS">
+                                                <rect key="frame" x="68" y="0.0" width="60.333333333333343" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="7lr-yO-AhY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqX-yj-xHw">
+                                                <rect key="frame" x="136.33333333333334" y="0.0" width="60" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="Za5-my-Pdg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1a-YI-hTt">
+                                                <rect key="frame" x="204.33333333333331" y="0.0" width="60.333333333333314" height="84"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="d3I-LN-wPS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0gX-5W-fHW">
+                                <rect key="frame" x="355.66666666666669" y="80" width="126" height="268"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFI-eT-X6G">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lPa-5b-pb0">
+                                                <rect key="frame" x="8" y="8" width="110" height="110"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appColor_red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lPa-5b-pb0" secondAttribute="bottom" constant="8" id="Mb2-7G-15g"/>
+                                            <constraint firstItem="lPa-5b-pb0" firstAttribute="leading" secondItem="DFI-eT-X6G" secondAttribute="leading" constant="8" id="SkF-8w-xKA"/>
+                                            <constraint firstAttribute="trailing" secondItem="lPa-5b-pb0" secondAttribute="trailing" constant="8" id="f2d-NT-4U3"/>
+                                            <constraint firstAttribute="width" secondItem="DFI-eT-X6G" secondAttribute="height" multiplier="1:1" id="i4l-np-XoF"/>
+                                            <constraint firstItem="lPa-5b-pb0" firstAttribute="top" secondItem="DFI-eT-X6G" secondAttribute="top" constant="8" id="yrE-6A-mOR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc2-aj-QOt">
+                                        <rect key="frame" x="0.0" y="142" width="126" height="126"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="emM-vQ-TGQ">
+                                                <rect key="frame" x="8" y="8" width="110" height="110"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appColor_red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="emM-vQ-TGQ" secondAttribute="trailing" constant="8" id="JNO-vW-9aw"/>
+                                            <constraint firstAttribute="bottom" secondItem="emM-vQ-TGQ" secondAttribute="bottom" constant="8" id="Zvw-aL-Ogk"/>
+                                            <constraint firstItem="emM-vQ-TGQ" firstAttribute="leading" secondItem="xc2-aj-QOt" secondAttribute="leading" constant="8" id="uRj-Rl-Th7"/>
+                                            <constraint firstItem="emM-vQ-TGQ" firstAttribute="top" secondItem="xc2-aj-QOt" secondAttribute="top" constant="8" id="ubJ-rt-9ir"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-wP-zRG">
+                                <rect key="frame" x="505.66666666666674" y="80" width="263.33333333333326" height="268"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-kO-Doi">
+                                        <rect key="frame" x="0.0" y="0.0" width="263.33333333333331" height="126"/>
+                                        <color key="backgroundColor" name="appColor_white_50"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Roll Dice">
+                                            <color key="titleColor" name="appColor_red"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rollDiceButtonTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="JE5-HW-j2J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="K16-I6-c46">
+                                        <rect key="frame" x="0.0" y="142" width="263.33333333333331" height="126"/>
+                                        <color key="backgroundColor" name="appColor_white_50"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Check Total">
+                                            <color key="titleColor" name="appColor_red"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="MwC-ph-a09" eventType="touchUpInside" id="dDR-w3-T0e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sUt-eH-DKJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4q4-hE-Cyj" secondAttribute="trailing" id="2XH-ol-geS"/>
+                            <constraint firstItem="JgR-eF-VuI" firstAttribute="top" secondItem="9ja-JO-VRi" secondAttribute="bottom" constant="24" id="5qC-dB-18T"/>
+                            <constraint firstItem="sUt-eH-DKJ" firstAttribute="bottom" secondItem="9ek-wP-zRG" secondAttribute="bottom" constant="24" id="8vi-SK-3ZK"/>
+                            <constraint firstItem="3qB-KT-RYa" firstAttribute="centerX" secondItem="m2n-hd-1NP" secondAttribute="centerX" id="A5e-Tr-3D9"/>
+                            <constraint firstItem="sUt-eH-DKJ" firstAttribute="trailing" secondItem="9ek-wP-zRG" secondAttribute="trailing" constant="24" id="ByD-xu-GmU"/>
+                            <constraint firstAttribute="bottom" secondItem="4q4-hE-Cyj" secondAttribute="bottom" id="GQh-Wz-oRF"/>
+                            <constraint firstItem="9ja-JO-VRi" firstAttribute="top" secondItem="sUt-eH-DKJ" secondAttribute="top" constant="16" id="KQP-l6-swS"/>
+                            <constraint firstItem="9ek-wP-zRG" firstAttribute="leading" secondItem="0gX-5W-fHW" secondAttribute="trailing" constant="24" id="RsA-yq-axu"/>
+                            <constraint firstItem="3qB-KT-RYa" firstAttribute="centerY" secondItem="9ja-JO-VRi" secondAttribute="centerY" id="RvM-2v-fCK"/>
+                            <constraint firstItem="0gX-5W-fHW" firstAttribute="leading" secondItem="JgR-eF-VuI" secondAttribute="trailing" constant="16" id="T23-aa-UOK"/>
+                            <constraint firstItem="4q4-hE-Cyj" firstAttribute="leading" secondItem="m2n-hd-1NP" secondAttribute="leading" id="Uiy-1S-uZn"/>
+                            <constraint firstItem="dgy-w2-3zo" firstAttribute="top" secondItem="sUt-eH-DKJ" secondAttribute="top" constant="16" id="a58-wO-WEO"/>
+                            <constraint firstItem="9ek-wP-zRG" firstAttribute="top" secondItem="dgy-w2-3zo" secondAttribute="bottom" constant="24" id="dCI-ED-BJe"/>
+                            <constraint firstItem="JgR-eF-VuI" firstAttribute="leading" secondItem="sUt-eH-DKJ" secondAttribute="leading" constant="16" id="mEY-7x-hj6"/>
+                            <constraint firstItem="4q4-hE-Cyj" firstAttribute="top" secondItem="m2n-hd-1NP" secondAttribute="top" id="mWx-LQ-WYR"/>
+                            <constraint firstItem="9ja-JO-VRi" firstAttribute="leading" secondItem="sUt-eH-DKJ" secondAttribute="leading" constant="16" id="msv-Em-wHy"/>
+                            <constraint firstItem="0gX-5W-fHW" firstAttribute="top" secondItem="dgy-w2-3zo" secondAttribute="bottom" constant="24" id="oFy-MN-NxF"/>
+                            <constraint firstItem="sUt-eH-DKJ" firstAttribute="bottom" secondItem="0gX-5W-fHW" secondAttribute="bottom" constant="24" id="t0k-9J-9Fl"/>
+                            <constraint firstItem="sUt-eH-DKJ" firstAttribute="bottom" secondItem="JgR-eF-VuI" secondAttribute="bottom" constant="24" id="xWQ-gx-R5Q"/>
+                            <constraint firstItem="sUt-eH-DKJ" firstAttribute="trailing" secondItem="dgy-w2-3zo" secondAttribute="trailing" constant="16" id="yfA-yy-uR5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4io-Kp-Hrm"/>
+                    <connections>
+                        <outlet property="card10Button" destination="GFT-XY-LIS" id="wIF-3q-eaF"/>
+                        <outlet property="card2Button" destination="ZDZ-kE-SQN" id="MwK-gU-1FC"/>
+                        <outlet property="card3Button" destination="OzD-rM-eVP" id="D65-Tc-UFf"/>
+                        <outlet property="card4Button" destination="Rur-qE-8qh" id="j0G-rS-d1P"/>
+                        <outlet property="card5Button" destination="SGL-hf-pXT" id="Am0-2O-zPY"/>
+                        <outlet property="card6Button" destination="gOh-Vd-q8Y" id="97a-t0-be6"/>
+                        <outlet property="card7Button" destination="eI7-pI-1cj" id="37Q-Km-K3D"/>
+                        <outlet property="card8Button" destination="Uqf-h5-Hda" id="8eL-Tr-zT7"/>
+                        <outlet property="card9Button" destination="kml-xH-B7h" id="V4e-Kw-CHv"/>
+                        <outlet property="cardAButton" destination="iOQ-Ja-24M" id="jIW-n5-aUI"/>
+                        <outlet property="cardJButton" destination="tqX-yj-xHw" id="ZC6-J7-VYA"/>
+                        <outlet property="cardQButton" destination="g1a-YI-hTt" id="HZB-cw-tlL"/>
+                        <outlet property="dice1ImageView" destination="lPa-5b-pb0" id="0Oa-xt-1pb"/>
+                        <outlet property="dice2ImageView" destination="emM-vQ-TGQ" id="hup-4w-7UN"/>
+                        <outlet property="resetGameButton" destination="dgy-w2-3zo" id="V31-Be-bWm"/>
+                        <outlet property="rollDiceButton" destination="ihb-kO-Doi" id="Svd-sc-vLV"/>
+                        <outlet property="submitButton" destination="K16-I6-c46" id="g1n-b3-Kfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D76-GQ-xpj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="-22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_about" width="948" height="319"/>
+        <image name="ic_bg" width="3663" height="2442"/>
+        <image name="ic_bg_home" width="2797" height="1291"/>
+        <image name="ic_card_stack" width="2000" height="1703"/>
+        <image name="ic_feedback" width="949" height="320"/>
+        <image name="ic_logo" width="1024" height="1024"/>
+        <image name="ic_privacy" width="949" height="320"/>
+        <namedColor name="appColor_black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appColor_red">
+            <color red="0.68699997663497925" green="0.013000000268220901" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appColor_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appColor_white_50">
+            <color red="1" green="1" blue="1" alpha="0.49900001287460327" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
