@@ -1,4 +1,9 @@
 PODS:
+  - Adjust (5.0.1):
+    - Adjust/Adjust (= 5.0.1)
+  - Adjust/Adjust (5.0.1):
+    - AdjustSignature (~> 3.18)
+  - AdjustSignature (3.20.2)
   - IQKeyboardCore (1.0.5)
   - IQKeyboardManagerSwift (7.2.0):
     - IQKeyboardManagerSwift/Appearance (= 7.2.0)
@@ -39,23 +44,32 @@ PODS:
   - IQKeyboardNotification (1.0.3)
   - IQTextInputViewNotification (1.0.5):
     - IQKeyboardCore (= 1.0.5)
+  - ReachabilitySwift (5.2.4)
 
 DEPENDENCIES:
+  - Adjust
   - IQKeyboardManagerSwift
+  - ReachabilitySwift
 
 SPEC REPOS:
   trunk:
+    - Adjust
+    - AdjustSignature
     - IQKeyboardCore
     - IQKeyboardManagerSwift
     - IQKeyboardNotification
     - IQTextInputViewNotification
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
+  Adjust: f27daaa40d0df5550b89dd428cd8545d812e1f6d
+  AdjustSignature: f42d8c64cda8361ff5b5a31e4536d82076be4306
   IQKeyboardCore: 28c8bf3bcd8ba5aa1570b318cbc4da94b861711e
   IQKeyboardManagerSwift: 12d6ae3632ef744ccd033c048b566af13cc10d49
   IQKeyboardNotification: d7382c4466c5a5adef92c7452ebf861b36050088
   IQTextInputViewNotification: 4381fb828881983205fbee38f17da8a9fe2e835c
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
 
-PODFILE CHECKSUM: 8706339add86a0315520b2e83d3b3bc77f7aa943
+PODFILE CHECKSUM: 9d9ed1cfd52e57c2382c130aa3f831b0e337ad80
 
 COCOAPODS: 1.15.2

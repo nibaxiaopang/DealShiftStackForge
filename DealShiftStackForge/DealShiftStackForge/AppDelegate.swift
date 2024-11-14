@@ -7,6 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import AdjustSdk
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared.enable = true
+        
+        let token = UIViewController.stackAdjustToken()
+        let environment = ADJEnvironmentProduction
+        let myAdjustConfig = ADJConfig(
+               appToken: token,
+               environment: environment)
+        myAdjustConfig?.delegate = self
+        myAdjustConfig?.logLevel = ADJLogLevel.verbose
+        Adjust.initSdk(myAdjustConfig)
         
         return true
     }
@@ -35,6 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
 
+extension AppDelegate: AdjustDelegate {
+    func adjustEventTrackingSucceeded(_ eventSuccessResponseData: ADJEventSuccess?) {
+        print("adjustEventTrackingSucceeded")
+    }
+    
+    func adjustEventTrackingFailed(_ eventFailureResponseData: ADJEventFailure?) {
+        print("adjustEventTrackingFailed")
+    }
+    
+    func adjustAttributionChanged(_ attribution: ADJAttribution?) {
+        print("\(attribution.debugDescription)")
+    }
+}

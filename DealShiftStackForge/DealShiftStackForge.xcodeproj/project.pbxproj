@@ -25,6 +25,7 @@
 		FFA2B7D42CE60740002D3755 /* StackForgePrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */; };
 		FFA2B7D62CE607BA002D3755 /* StackForgeGameHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */; };
 		FFA2B7D82CE607D3002D3755 /* StackForgeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */; };
+		FFA2B7DB2CE60FD0002D3755 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B7DA2CE60FD0002D3755 /* UIViewController+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,9 @@
 		FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgePrivacyViewController.swift; sourceTree = "<group>"; };
 		FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeGameHallViewController.swift; sourceTree = "<group>"; };
 		FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackForgeNavigationController.swift; sourceTree = "<group>"; };
+		FFA2B7D92CE60FD0002D3755 /* UIViewController+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		FFA2B7DA2CE60FD0002D3755 /* UIViewController+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
+		FFA2B7DC2CE60FD1002D3755 /* DealShiftStackForge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DealShiftStackForge-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				FFA2B7B62CE605B0002D3755 /* LaunchScreen.storyboard */,
 				FFA2B7B82CE605B0002D3755 /* Main.storyboard */,
 				FFA2B7BA2CE605B0002D3755 /* StackForgeHomeViewController.swift */,
+				FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */,
 				FFA2B7D52CE607BA002D3755 /* StackForgeGameHallViewController.swift */,
 				FFA2B7D72CE607D3002D3755 /* StackForgeNavigationController.swift */,
 				FFA2B7C52CE606C6002D3755 /* StackForgeThreeCardMonteViewController.swift */,
@@ -118,8 +123,10 @@
 				FFA2B7CD2CE60717002D3755 /* StackForgeAboutViewController.swift */,
 				FFA2B7CF2CE60723002D3755 /* StackForgeFeedbackViewController.swift */,
 				FFA2B7D12CE60730002D3755 /* StackForgeUtils.swift */,
-				FFA2B7D32CE60740002D3755 /* StackForgePrivacyViewController.swift */,
+				FFA2B7D92CE60FD0002D3755 /* UIViewController+Ext.h */,
+				FFA2B7DA2CE60FD0002D3755 /* UIViewController+Ext.m */,
 				FFA2B7C32CE6064F002D3755 /* Win.gif */,
+				FFA2B7DC2CE60FD1002D3755 /* DealShiftStackForge-Bridging-Header.h */,
 			);
 			path = DealShiftStackForge;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 				TargetAttributes = {
 					FFA2B7992CE6059E002D3755 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -250,6 +258,7 @@
 				FFA2B7D22CE60730002D3755 /* StackForgeUtils.swift in Sources */,
 				FFA2B7CC2CE6070A002D3755 /* StackForgeSettingViewController.swift in Sources */,
 				FFA2B7D62CE607BA002D3755 /* StackForgeGameHallViewController.swift in Sources */,
+				FFA2B7DB2CE60FD0002D3755 /* UIViewController+Ext.m in Sources */,
 				FFA2B7CE2CE60717002D3755 /* StackForgeAboutViewController.swift in Sources */,
 				FFA2B7D02CE60723002D3755 /* StackForgeFeedbackViewController.swift in Sources */,
 				FFA2B7CA2CE606FC002D3755 /* StackForgeDiceCardGameViewController.swift in Sources */,
@@ -284,12 +293,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DealShiftStackForge/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "DealShift StackForge";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "DealShift StackForge requests access to your device information to optimize the app’s performance and personalize your gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,11 +312,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DealShiftStackForge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poker.DealShiftStackForge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DealShiftStackForge/DealShiftStackForge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -317,12 +330,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DealShiftStackForge/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "DealShift StackForge";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "DealShift StackForge requests access to your device information to optimize the app’s performance and personalize your gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,11 +349,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DealShiftStackForge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poker.DealShiftStackForge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DealShiftStackForge/DealShiftStackForge-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

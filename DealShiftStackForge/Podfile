@@ -7,4 +7,6 @@ target 'DealShiftStackForge' do
 
   # Pods for DealShiftStackForge
   pod 'IQKeyboardManagerSwift'
+  pod 'Adjust'
+  pod 'ReachabilitySwift'
 end
